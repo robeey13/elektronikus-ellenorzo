@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "elektronikus_ellenorzo/1.0.0": {
+        "runtime": {
+          "elektronikus_ellenorzo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "elektronikus_ellenorzo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

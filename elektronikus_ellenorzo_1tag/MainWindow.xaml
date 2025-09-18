@@ -1,0 +1,60 @@
+﻿<Window x:Class="elektronikus_ellenorzo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tanuló Nyilvántartás" Height="600" Width="500">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+
+            <!-- Név -->
+            <TextBlock Text="Név:"/>
+            <TextBox x:Name="NevTextBox"/>
+
+            <!-- Születési hely -->
+            <TextBlock Text="Születési hely:" Margin="0,10,0,0"/>
+            <TextBox x:Name="SzuletesiHelyTextBox"/>
+
+            <!-- Születési idő -->
+            <TextBlock Text="Születési idő:" Margin="0,10,0,0"/>
+            <DatePicker x:Name="SzuletesiIdoPicker"/>
+
+            <!-- Anyja neve -->
+            <TextBlock Text="Anyja neve:" Margin="0,10,0,0"/>
+            <TextBox x:Name="AnyjaNeveTextBox"/>
+
+            <!-- Lakcím -->
+            <TextBlock Text="Lakcím:" Margin="0,10,0,0"/>
+            <TextBox x:Name="LakcimTextBox"/>
+
+            <!-- Beiratkozás időpontja -->
+            <TextBlock Text="Beiratkozás időpontja:" Margin="0,10,0,0"/>
+            <DatePicker x:Name="BeiratkozasIdoPicker"/>
+
+            <!-- Szak -->
+            <TextBlock Text="Szak:" Margin="0,10,0,0"/>
+            <ComboBox x:Name="SzakComboBox">
+                <ComboBoxItem>Szoftverfejlesztő</ComboBoxItem>
+                <ComboBoxItem>Gépész</ComboBoxItem>
+                <ComboBoxItem>Mechatronikus</ComboBoxItem>
+            </ComboBox>
+
+            <!-- Osztály -->
+            <TextBlock Text="Osztály:" Margin="0,10,0,0"/>
+            <TextBox x:Name="OsztalyTextBox"/>
+
+            <!-- Kollégista -->
+            <CheckBox x:Name="KollegistaCheckBox" Content="Kollégista?" Margin="0,10,0,0"/>
+
+            <!-- Kollégium neve -->
+            <TextBlock Text="Kollégium neve:" Margin="0,10,0,0"/>
+            <TextBox x:Name="KollegiumTextBox"/>
+
+            <!-- Gombok -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <Button Content="Mentés" Width="100" Margin="10"/>
+                <Button Content="Admin" Width="100" Margin="10"/>
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
