@@ -1,0 +1,60 @@
+﻿<Window x:Class="elektronikus_ellenorzo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:elektronikus_ellenorzo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <!-- 1. fül: Tantárgyak -->
+            <TabItem Header="Tantárgyak">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Új tantárgy felvitele:" FontWeight="Bold" />
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <TextBlock Text="Név:" Width="80"/>
+                        <TextBox x:Name="tantargyNev" Width="200" Text=""/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <TextBlock Text="Évfolyam:" Width="80"/>
+                        <ComboBox x:Name="evfolyam" Width="100">
+                            <ComboBoxItem Content="9"/>
+                            <ComboBoxItem Content="10"/>
+                            <ComboBoxItem Content="11"/>
+                            <ComboBoxItem Content="12"/>
+                            <ComboBoxItem Content="13"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <TextBlock Text="Típus:" Width="80"/>
+                        <ComboBox x:Name="tantargytipus" Width="150">
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,5">
+                        <TextBlock Text="Heti óraszám:" Width="80"/>
+                        <TextBox x:Name="hetioraszam" Width="50"/>
+                    </StackPanel>
+                    <Button x:Name="MentesBtn" Click="Mentes" ClickMode="Press" Content="Mentés" Width="100" Margin="0,10,0,0"/>
+
+                    <TextBlock Text="Felvitt tantárgyak:" FontWeight="Bold" Margin="0,20,0,5"/>
+                    <DataGrid x:Name="felvittTantargyak" AutoGenerateColumns="True" Height="150"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- 2. fül: Tanulók -->
+            <TabItem Header="Tanulók">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Itt majd a tanulók és tantárgy-hozzárendelés lesz."/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- 3. fül: Admin -->
+            <TabItem Header="Admin">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Itt majd a kimutatások lesznek."/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
